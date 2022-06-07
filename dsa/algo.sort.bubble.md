@@ -2,7 +2,7 @@
 published : true
 
 title :  "Bubble Sort"
-permalink : "/algo/sort/bubble"
+permalink : "cs/algo/sort/bubble"
 layout : note
 excerpt : 
 
@@ -14,6 +14,8 @@ tags :
 
 showfooter : 
 showgraph : 
+created_at: 2022-06-04 15:23:51 +0530
+modified_at: 2022-06-04 15:36:17 +0530
 ---
 
 ### Summary 
@@ -83,6 +85,6 @@ int main() {
 
 ---
 
-Return to [[algo.algorithm|Algorithms]]
+Return to [[algo.sort|Sorting Algorithms]]
 
 ---

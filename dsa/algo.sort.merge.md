@@ -2,11 +2,11 @@
 published : true
 
 title : "Merge Sort"
-permalink : "/algo/sort/merge"
+permalink : "cs/algo/sort/merge"
 layout : note
 excerpt : 
 
-alias : 
+alias : ["Merge Sort"]
 categories : "algo"
 tags : 
 
@@ -14,5 +14,21 @@ tags :
 
 showfooter : 
 showgraph : 
+created_at: 2022-06-04 15:28:28 +0530
+modified_at: 2022-06-04 15:36:54 +0530
 ---
 
+
+
+
+
+
+
+
+
+
+---
+
+Return to [[algo.sort|Sorting Algorithms]]
+
+---

@@ -7,13 +7,16 @@ layout : note
 excerpt : DSA Problem and Solution
 
 alias : 
-categories : problem
+categories : ["problem"]
 tags : 
 
 questionLink : "https://practice.geeksforgeeks.org/problems/coin-change2448/1#"
 questionType : 
 
 solvedDate : 2022-05-30 00:00:00 +0000
+
+created_at: 2022-06-04 14:31:53 +0530
+modified_at: 2022-06-07 19:28:20 +0530
 ---
 
 ## Problem Statement
@@ -23,7 +26,7 @@ solvedDate : 2022-05-30 00:00:00 +0000
 ### Example
 
 ```
-
+ 
 Input:
 n = 4 , m = 3
 S[] = {1,2,3}

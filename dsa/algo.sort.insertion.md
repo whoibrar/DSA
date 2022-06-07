@@ -14,6 +14,8 @@ tags :
 
 showfooter : 
 showgraph : 
+created_at: 2022-06-04 15:23:51 +0530
+modified_at: 2022-06-04 15:36:30 +0530
 ---
 
 ### Summary 
@@ -49,6 +51,6 @@ void insertion(int arr[], int n) {
 
 ---
 
-Return to [[algo.algorithm|Algorithms]]
+Return to [[algo.sort|Sorting Algorithms]]
 
 ---

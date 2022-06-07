@@ -12,6 +12,8 @@ tags :
 
 # publishedDate : 2022-05-28 00:00:00 +0000
 
+created_at: 2022-06-04 15:23:51 +0530
+modified_at: 2022-06-04 15:23:51 +0530
 ---
 
 ### Time Complexity of loops 
@@ -42,6 +44,6 @@ source → [Analysis of Algorithms - Set 4 (Analysis of Loops) - GeeksforGeeks](
 
 ---
 
-Return to [[algo.algorithm|Algorithms]]
+Return to [[Algorithms|Algorithms]]
 
 ---

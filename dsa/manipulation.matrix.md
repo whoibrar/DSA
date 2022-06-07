@@ -14,6 +14,8 @@ tags :
 
 showfooter : 
 showgraph : 
+created_at: 2022-06-05 14:42:20 +0530
+modified_at: 2022-06-05 15:28:23 +0530
 ---
 
 ### Print Matrix
@@ -87,6 +89,71 @@ vector<vector<int>> transpose(vector<vector<int>>& matrix) {
         return [[matrix[i][j] for i in range(len(matrix))] for j in range(len(matrix[0]))]
 
 ```
+
+
+### Accessing Elements in all 8 directions with single loop
+
+Could've been useful for [[Leetcode-0051-n-queens]] if all you did was added queen to said location and recolor the locations it can access 
+
+```cpp
+
+8 -> Queen
+1 -> Attack
+
+|     |     |     |     |     |
+| --- | --- | --- | --- | --- |
+| .   | .   | 1   | .   | .   |
+| 1   | .   | 1   | .   | 1   |
+| .   | 1   | 1   | 1   | .   |
+| 1   | 1   | 8   | 1   | 1   |
+| .   | 1   | 1   | 1   | .   |
+| 1   | .   | 1   | .   | 1   |
+
+
+int addqueen(vector<vector<int>> &board, int i, int j) {
+	int n = board.size();
+	if (i >= n or j >= n) {return -1;}
+	int idx = 0;
+
+	while (idx < n) {
+		
+		// horizontal [i][0...n]	// vertial [0...n][j]
+		if (idx < n) 
+			{board[i][idx] = 1; board[idx][j] = 1;}
+		
+		// top left [0][0]
+		if ((i - 1 - idx >= 0) and (j - 1 - idx >= 0)) 
+			{board[i - 1 - idx][j - 1 - idx] = 1;}
+		
+		// bottom right [n][n]
+		if ((i + 1 + idx < n) and (j + 1 + idx < n)) 
+			{board[i + 1 + idx][j + 1 + idx] = 1;}
+		
+		// top right [0][n]
+		if ( (i - 1 - idx >= 0) and (j + 1 + idx < n)) 
+			{board[i - 1 - idx][j + 1 + idx] = 1;}
+		
+		// bottom left [n][0]
+		if ( (i + 1 + idx < n) and (j - 1 - idx >= 0)) 
+			{board[i + 1 + idx][j - 1 - idx] = 1;}
+		idx++;
+	}
+	board[i][j] = 8;
+	return 1;
+}
+
+
+```
+
+|     |     |     |
+| --- | --- | --- |
+| nw  | n   | ne  |
+| w   | .   | e   |
+| sw  | s   | se  |
+| --- | --- | --- |
+|     |     |     |
+
+
 
 ---
 

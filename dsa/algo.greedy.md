@@ -14,6 +14,8 @@ tags :
 
 showfooter : 
 showgraph : 
+created_at: 2022-06-04 15:23:51 +0530
+modified_at: 2022-06-04 15:23:51 +0530
 ---
 
 > Greedy is an algorithmic paradigm that builds up a solution piece by piece, always choosing the next piece that offers the most obvious and immediate benefit. ~GFG
@@ -35,6 +37,6 @@ showgraph :
 
 ---
 
-Return to [[algo.algorithm|Algorithms]]
+Return to [[Algorithms|Algorithms]]
 
 ---

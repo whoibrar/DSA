@@ -14,6 +14,8 @@ questionLink :
 questionType : 
 
 solvedDate : 2022-05-16 00:00:00 +0000
+created_at: 2022-06-09 18:46:42 +0530
+modified_at: 2022-06-09 18:46:42 +0530
 ---
 
 ## Problem Statement
@@ -56,7 +58,7 @@ pair<long long, long long> getMinMax(long long a[], int n) {
 
 ```
 
-using [[cpp-stl-pair]] here!
+using [[CPP STL Pair]] here!
 
 ---
 

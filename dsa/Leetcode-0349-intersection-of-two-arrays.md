@@ -10,28 +10,26 @@ alias :
 categories : problem
 tags : 
 
-questionLink : 
-questionType : 
-
-solvedDate : 2022-05-16 00:00:00 +0000
+created_at: 2022-06-09 18:46:53 +0530
+modified_at: 2022-06-09 19:02:40 +0530
 ---
 
 ## Problem Statement
 
-- 
+- Given two integer arrays nums1 and nums2, return an array of their intersection. Each element in the result must be unique and you may return the result in any order.
 
 ### Example
 
 ```
-given 
-return 
 
+Input: nums1 = [1,2,2,1], nums2 = [2,2]
+Output: [2]
 
 ```
 
 ## Solution Approaches
 
-### O(N) - [[cpp-stl-set]] 
+### O(N) - [[CPP STL Set]] 
 
 ```cpp
 

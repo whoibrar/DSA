@@ -16,7 +16,7 @@ showfooter :
 showgraph : 
 
 created_at: 2022-06-05 16:07:58 +0530
-modified_at: 2022-06-05 16:07:58 +0530
+modified_at: 2022-06-09 18:52:54 +0530
 ---
 
 #todo/code ->
@@ -32,21 +32,23 @@ modified_at: 2022-06-05 16:07:58 +0530
 #include <bits/stdc++.h>
 using namespace std;
 
+#define pb(i) push_back(i)
+#define nl cout<< endl;
+#define pp pop_back()
+
 void getar(int a[], int n);
 void getar(string a[], int n);
 void setar(int a[], int n);
 void getv(vector<int> v);
+void setv(vector<int> v);
 void getv(vector<string> v);
 void getvv(vector<vector<int>> v);
-
-
-
-
-
+void setvv(vector<vector<int>> v);
 
 
 
 int main() {
+
 
 // INPUT
 ////////
@@ -77,6 +79,18 @@ int main() {
 
 
 
+void setvv(vector<vector<int>> &v) {
+	int N; cin >> N;
+	for (int i = 0; i < N; i++) {
+		int n; cin >> n;
+		v.push_back(vector<int> ()); // adding empty vector
+		for (int j = 0; j < n; j++) {
+			int temp; cin >> temp;
+			v[i].push_back(temp);
+		}
+		getv(v[i]); cout << endl;
+	}
+}
 
 void getv(vector<string> v) {
 	int n = v.size();
@@ -95,6 +109,15 @@ void getv(vector<int> v) {
 	}
 	cout << v[n - 1] << "]" << "---";
 }
+
+void setv(vector<int> v, int n) {
+	for (int i = 0; i < n; i++) {
+		int temp;
+		cin >> temp;
+		v.push_back(temp);
+	}
+}
+
 
 void getar(int a[], int n) {
 	cout << "---" << "[";
@@ -126,3 +149,10 @@ void getvv(vector<vector<int>> v) {
 }
 
 ```
+
+
+---
+
+Return to [[CPP]]
+
+---
